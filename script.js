@@ -1,2 +1,2 @@
-var video = document.querySelector('video');
-video.playbackRate = prompt('Speed?','');
+var media = document.querySelector('video, audio');
+media.playbackRate = prompt('Speed?','');
