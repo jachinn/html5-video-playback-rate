@@ -1,4 +1,5 @@
-var media = document.querySelector('video, audio');
+var media = document.querySelectorAll('video, audio');
+var rate = prompt('Speed?','');
 Array.prototype.forEach.call(media, function(player) {
-   player.playbackRate = prompt('Speed?','');
+   player.playbackRate = rate;
 });
