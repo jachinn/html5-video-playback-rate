@@ -1,2 +1,4 @@
 var media = document.querySelector('video, audio');
-media.playbackRate = prompt('Speed?','');
+Array.prototype.forEach.call(media, function(player) {
+   player.playbackRate = prompt('Speed?','');
+});
